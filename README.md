@@ -7,7 +7,7 @@ In-context learning (ICL) is a cost-effective, low-resource adaptation strategy 
 Models (LLMs), requiring substantially less annotated data than fine-tuning. Although ICL is highly sensitive
 to demonstration selection and ordering, recent studies suggest that leveraging annotator disagreement can
 improve performance on subjective NLP tasks. Furthermore, human explanations—highlighted tokens or free-text
-rationales— can serve as an additional learning signal. Yet their use in subjective NLP remains underexplored,
+rationales—can serve as an additional learning signal. Yet their use in subjective NLP remains underexplored,
 largely due to the scarcity of datasets with human-provided explanations. To address these limitations, we
 introduce DA-Self-Amplify, a scalable framework that enriches ICL with disagreement-aware demonstrations
 and automatically generated post-hoc explanations. Specifically, demonstrations are selected based on annotator
