@@ -159,7 +159,7 @@ class SLM:
         ids = self.tok(prompt, return_tensors="pt").to(self.device)
         with torch.no_grad():
             out = self.model.generate(
-                **ids, max_new_tokens=5,
+                **ids, max_new_tokens=1,
                 do_sample=False, temperature=1.0,
                 pad_token_id=self.tok.pad_token_id)
         return self.tok.decode(out[0, ids["input_ids"].shape[1]:],
